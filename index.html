@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek1 STr HTML 27 02 2024</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carissa Amanda</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header>
+<header>
+  <div class="container">
+    <h1>Carissa's Proyek 1</h1>
+    <nav>
+      <ul>
+        <li><a href="#about" id="about-link">Tentang Saya</a></li>
+        <li><a href="#kontak-saya">Kontak Saya</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <nav>
-            <div class="logo">
-                <h4>Rizqi Proyek 1</h4>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Assignment</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>   
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-    <main>
-        <div class="box flextwo">
-            <article>
-                <h2>Tentang Web</h2>
-                <p>Web Ini dibuat untuk memenuhi tugas Proyek 1. Beberapa sumber yang dipakai dalam pengerjaan tugas ini selain dari lms  adalah dari ... Terima Kasih</p>
-            </article>
-        </div>
-        <aside class="box flexone">
-            <img src="img/RIZQI.png" class="image"/>
-            <h5>Muhammad Rizqi Sholahuddin</h5>
-        </aside>
-    </main>
-    <footer class="box">
-        Rizqi, Di depan Laptop 27 Februari 2024
-    </footer>
+<section class="profile">
+  <div class="container">
+    <div class="profile-image">
+      <img src="img/carissa.png" alt="">
     </div>
-</div>
-    <script src="js/main.js"></script>
-</body>
+    <div class="profile-details">
+      <h2>Carissa Amanda Chrisanty Lesmana</h2>
+      <p>Jangan pernah takut untuk mencoba!</p>
+    </div>
+  </div>
+</section>
 
+<section class="about" id="about">
+  <div class="container">
+    <h1>Tentang Saya</h1>
+    <p><a href="#hobi" id="hobi-link">hobi</a>, <a href="#harapan" id="harapan-link">harapan</a></p>
+  </div>  
+</section>
+
+<section class="harapan" id="harapan">
+  <div class="container">
+    <h1>Harapan Setelah Lulus</h1>
+    <ul>
+      <li>Saya berharap setelah lulus dari JTK Polban dapat memperoleh ilmu pemrograman yang dapat bermanfaat di dunia kerja saya nanti.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="hobi" id="hobi">
+  <div class="container">
+    <h1>Hobi</h1>
+    <p>Saya memiliki beberapa hobi, diantaranya:</p>
+    <ul>
+      <li>Mendengarkan musik</li>
+      <li>Menyanyi</li>
+      <li>Bersepeda</li>
+      <li>Mendengarkan musik</li>
+    </ul>
+  </div>
+</section>
+
+<section class="map">
+  <div class="container">
+    <h1>Lokasi Saya</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.5794331434245!2d107.57224213858555!3d-6.871559898281799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sen!2sid!4v1709006846273!5m2!1sen!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<section class="kontak-saya" id="kontak-saya">
+  <div class="container">
+    <h1>Kontak Saya</h1>
+    <div class="kontak">
+      <a href="https://www.instagram.com/carissaamnd" target="_blank">
+        <img src="images/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/qr/T4UEBU22PAENC1" target="_blank">
+        <img src="images/WhatsApp_icon.png" alt="WhatsApp">
+      </a>
+      <a href="https://github.com/Carissaamnd" target="_blank">
+        <img src="images/25231.png" alt="Github">
+      </a>
+      <a href="mailto:carissa.amanda.tif423@polban.ac.id" target="_blank">
+        <img src="images/email-icon-121.png" alt="Email">
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
 </html>
