@@ -1,0 +1,108 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  background-color: #ed9ee9;
+  padding: 20px 0;
+}
+
+.hobi {
+  background-color: #ed9ee9; 
+  padding: 20px 0;
+}
+
+.map {
+  background-color: #ed9ee9; 
+  padding: 20px 0;
+}
+
+.harapan {
+  background-color: #ed9ee9;
+  padding: 20px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ed9ee9;
+  color: #602a6f;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.profile-image img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 100%;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.profile {
+  background-color: #cb52d4;
+  padding: 10px 0;
+}
+
+.profile-details {
+  margin-left: 10px;
+}
+
+.about,
+.map,
+.harapan,
+.hobi,
+.kontak-saya {
+  padding: 20px 0;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.hobi ul,
+.harapan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobi ul li,
+.harapan ul li {
+  margin-bottom: 10px;
+}
+
+.kontak-saya {
+  background-color: #cb52d4;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.kontak-saya h1 {
+  color: #4a1958;
+}
+
+.kontak a {
+  margin-right: 20px;
+}
+
+.kontak a img {
+  width: 30px;
+}
