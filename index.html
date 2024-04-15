@@ -6,17 +6,45 @@
 <title>Carissa Amanda</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="script.js"></script>
+
+
 <body>
 <header>
   <div class="container">
     <h1>Carissa's Proyek 1</h1>
-    <nav>
+
+    <nav id="hamburger-menu">
+      <div class="logo"></div>
+
+          <div class="menu-links">
+              <li><a href="#profile-info" onclick="toggleMenu()">Profil Diri</a></li>
+              <li><a href="#hobi" onclick="toggleMenu()">Hobi</a></li>
+              <li><a href="#harapan" onclick="toggleMenu()">Harapan</a></li>
+              <li><a href="#galeri" onclick="toggleMenu()">Galeri</a></li>
+              <li><a href="#kontak-saya" onclick="toggleMenu()">Kontak Saya</a></li>
+          </div>
+
+          
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" id="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="dekstop-nav">
       <ul>
         <li><a href="#profile-info" id="about-link">Profil Diri</a></li>
         <li><a href="#about" id="about-link">Tentang Saya</a></li>
         <li><a href="#kontak-saya">Kontak Saya</a></li>
         <li><a href="#hobi">Hobi</a></li>
         <li><a href="#harapan">Harapan</a></li>
+        <li><a href="#galeri">Galeri</a></li>
       </ul>
     </nav>
   </div>
@@ -40,7 +68,7 @@
     <ul>
       <li><strong>Nama:</strong> Carissa Amanda Chrisanty Lesmana</li>
       <li><strong>NIM:</strong> 231524003</li>
-      <li><strong>Kelas:</strong> 1A D4 Teknik Informatika</li>
+      <li><strong>Kelas:</strong> 1A - D4 Teknik Informatika</li>
       <li><strong>Tempat Tanggal Lahir:</strong> Bandung, 4 September 2005</li>
       <li><strong>Umur:</strong> 18 tahun</li>
       <li><strong>Jenis Kelamin:</strong> Perempuan</li>
@@ -73,17 +101,8 @@
       <li>Mendengarkan musik</li>
       <li>Menyanyi</li>
       <li>Bersepeda</li>
-      <li>Mendengarkan musik</li>
+      <li>Travelling</li>
     </ul>
-  </div>
-</section>
-
-<section class="youtube-video">
-  <div class="container">
-    <h1>Video Tentang Saya</h1>
-    <div class="video-wrapper">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xO98PlVZUkY?si=jVD9GbxptEMwDiUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
   </div>
 </section>
 
@@ -108,9 +127,38 @@
   </div>
 </section>
 
+<section class="galeri" id="galeri">
+  <div class="container">
+    <h1>My Galery's</h1>
+    <div class="galeri-images">
+      <img src="img/myself.jpg" alt="Carissa">
+      <img src="img/family.jpg" alt="Family">
+      <img src="img/friends.jpg" alt="Friends">
+    </div>
+  </div>
+</section>
+
+<section class="youtube-video">
+  <div class="container">
+    <h1>Video Tentang Saya</h1>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xO98PlVZUkY?si=jVD9GbxptEMwDiUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="scraping-results">
+  <div class="container">
+    <h1>Hasil Scraping</h1>
+    <ul id="scraping-list">
+      <!-- Tempatkan hasil scraping di sini -->
+    </ul>
+  </div>
+</section>
+
 <section class="map">
   <div class="container">
-    <h1>Lokasi Saya</h1>
+    <h1>Kampus Saya</h1>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.5794331434245!2d107.57224213858555!3d-6.871559898281799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e420abc30acf%3A0x10569255865460a5!2sPoliteknik%20Negeri%20Bandung!5e0!3m2!1sen!2sid!4v1709006846273!5m2!1sen!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>

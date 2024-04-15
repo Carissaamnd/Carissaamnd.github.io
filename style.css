@@ -106,3 +106,123 @@ nav ul li {
 .kontak a img {
   width: 30px;
 }
+
+#hamburger-nav {
+  display: none;
+}
+
+.show-menu .menu-links {
+  display: flex;
+  flex-direction: column;
+  background-color: #cb52d4;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.show-menu .menu-links li {
+  padding: 10px;
+  text-align: center;
+}
+
+.show-menu .menu-links a {
+  color: #4a1958;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #hamburger-nav {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .hamburger-icon span {
+    background-color: #cb52d4;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+  }
+
+  .dekstop-nav {
+    display: none;
+  }
+
+  .show-menu .dekstop-nav {
+    display: block;
+  }
+}
+
+/* Add these styles for the Galeri section */
+.galeri {
+  background-color: #cb52d4;
+  padding: 20px;
+}
+
+.galeri h1 {
+  text-align: center;
+}
+
+.galeri-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.galeri-images img {
+  max-width: 45%; /* Ensure the image doesn't exceed its container width */
+  max-height: 50px; /* Set the maximum height as needed */
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+.scraping-results {
+  background-color: #f8f9fa; /* Warna latar belakang */
+  padding: 50px 0; /* Padding atas dan bawah */
+}
+
+.scraping-results .container {
+  max-width: 800px; /* Lebar maksimum konten */
+  margin: 0 auto; /* Posisi tengah */
+}
+
+.scraping-results h1 {
+  text-align: center; /* Posisi teks tengah */
+  margin-bottom: 30px; /* Jarak bawah */
+}
+
+.scraping-results ul {
+  list-style-type: none; /* Tidak ada bullets */
+  padding: 0; /* Hapus padding */
+}
+
+.scraping-results li {
+  margin-bottom: 20px; /* Jarak antara setiap item */
+  background-color: #ffffff; /* Warna latar belakang item */
+  border-radius: 5px; /* Sudut border */
+  padding: 15px; /* Padding di dalam item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.scraping-results li strong {
+  color: #007bff; /* Warna teks kategori */
+}
+
+.scraping-results li:hover {
+  background-color: #f1f1f1; /* Warna latar belakang saat hover */
+}

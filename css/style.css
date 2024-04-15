@@ -7,11 +7,15 @@ body {
 .about {
   background-color: #ed9ee9;
   padding: 20px 0;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .hobi {
   background-color: #ed9ee9; 
   padding: 20px 0;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .map {
@@ -22,6 +26,8 @@ body {
 .harapan {
   background-color: #ed9ee9;
   padding: 20px 0;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .container {
@@ -61,6 +67,8 @@ nav ul li {
 .profile {
   background-color: #cb52d4;
   padding: 10px 0;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .profile-details {
@@ -83,6 +91,7 @@ nav ul li {
 .harapan ul {
   list-style-type: none;
   padding: 0;
+  margin: 20px 0;
 }
 
 .hobi ul li,
@@ -94,6 +103,8 @@ nav ul li {
   background-color: #cb52d4;
   padding: 20px 0;
   text-align: center;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .kontak-saya h1 {
@@ -142,7 +153,9 @@ nav ul li {
 .video-wrapper {
   position: relative;
   overflow: hidden;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .video-wrapper iframe {
@@ -194,3 +207,61 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+/* Add these styles for the hamburger icon */
+.hamburger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.hamburger-icon span {
+  background-color: #ed9ee9;
+  height: 1px;
+  width: 10px;
+  margin: 1px 0;
+}
+
+/* Add these styles to hide the desktop navigation on small screens */
+@media only screen and (max-width: 768px) {
+  .dekstop-nav {
+    display: none;
+  }
+
+  .show-menu .dekstop-nav {
+    display: block;
+  }
+}
+
+/* Add these styles for the Galeri section */
+.galeri {
+  background-color: #ed9ee9;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.galeri h1 {
+  text-align: center;
+}
+
+.galeri-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.galeri-images img {
+  max-width: 50%;
+  height: auto;
+  margin: 3%;
+  border-radius: 8px;
+}
+
+.galeri-images {
+  background-color: #cb52d4;
+  padding: 5px 0;
+  margin: 20px 0;
+  border-radius: 8px;
+}
