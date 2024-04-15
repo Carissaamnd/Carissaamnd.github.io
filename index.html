@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carissa Amanda</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </head>
 
 
@@ -148,8 +148,7 @@
 <section class="scraping-results">
   <div class="container">
     <h1>Hasil Scraping</h1>
-    <ul id="scraping-list">
-      <!-- Tempatkan hasil scraping di sini -->
+    <ul id="C:\Users\Carissa Amanda\Documents\Semester 2 Carissa\Proyek 1 Pengembangan Perangkat Lunak\Minggu 8\data.json">
     </ul>
   </div>
 </section>
@@ -182,33 +181,6 @@
 </section>
 
 <script src="script.js"></script>
-
-<script>
-  // Data scraping
-  const scrapingData = [
-    { kategori: 'Hobi', judul: 'Mendengarkan musik', waktu: '2 jam sehari' },
-    { kategori: 'Hobi', judul: 'Menyanyi', waktu: '1 jam sehari' },
-    { kategori: 'Hobi', judul: 'Bersepeda', waktu: '3 jam seminggu' },
-    { kategori: 'Hobi', judul: 'Travelling', waktu: '2 minggu setahun' },
-    { kategori: 'Pelajaran', judul: 'Penggunaan aplikasi Github', waktu: '10 jam seminggu' },
-    { kategori: 'Pelajaran', judul: 'Kesabaran dalam menghadapi tantangan', waktu: 'Setiap hari' }
-  ];
-
-  function displayScrapingResults(data) {
-    const scrapingList = document.getElementById('scraping-list');
-    scrapingList.innerHTML = ''; // Hapus dulu isi list yang lama
-
-    data.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = `[${item.kategori}] ${item.judul} (${item.waktu})`;
-      scrapingList.appendChild(li);
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    displayScrapingResults(scrapingData);
-  });
-</script>
 
 </body>
 </html>

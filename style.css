@@ -192,7 +192,7 @@ nav ul li {
 }
 
 .scraping-results {
-  background-color: #f8f9fa; /* Warna latar belakang */
+  background-color: #4a1958; /* Warna latar belakang */
   padding: 50px 0; /* Padding atas dan bawah */
 }
 
@@ -213,10 +213,10 @@ nav ul li {
 
 .scraping-results li {
   margin-bottom: 20px; /* Jarak antara setiap item */
-  background-color: #ffffff; /* Warna latar belakang item */
+  background-color: #4a1958; /* Warna latar belakang item */
   border-radius: 5px; /* Sudut border */
   padding: 15px; /* Padding di dalam item */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  box-shadow: 0 2px 4px #4a1958(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
 .scraping-results li strong {
@@ -224,5 +224,5 @@ nav ul li {
 }
 
 .scraping-results li:hover {
-  background-color: #f1f1f1; /* Warna latar belakang saat hover */
+  background-color: #ed9ee9; /* Warna latar belakang saat hover */
 }
