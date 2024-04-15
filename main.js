@@ -31,28 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleLessonsSection();
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // Data scraping yang diberikan
-    var dataScraping = [
-      // Data scraping disini
-    ];
+  function displayScrapingResults(data) {
+    const scrapingList = document.getElementById('scraping-list');
+    scrapingList.innerHTML = ''; // Hapus dulu isi list yang lama
   
-    // Pilih elemen <ul> dengan id "scraping-list"
-    var scrapingList = document.getElementById("scraping-list");
-  
-    // Iterasi melalui setiap objek dalam data scraping
-    dataScraping.forEach(function(item) {
-      // Buat elemen <li>
-      var listItem = document.createElement("li");
-  
-      // Buat konten untuk elemen <li>
-      var content = document.createTextNode(item.kategori + " - " + item.judul + " (" + item.waktu + ")");
-  
-      // Tambahkan konten ke dalam elemen <li>
-      listItem.appendChild(content);
-  
-      // Tambahkan elemen <li> ke dalam elemen <ul>
-      scrapingList.appendChild(listItem);
+    data.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `[${item.kategori}] ${item.judul} (${item.waktu})`;
+      scrapingList.appendChild(li);
     });
-});
+  }
+  displayScrapingResults(scrapingData);
 });
