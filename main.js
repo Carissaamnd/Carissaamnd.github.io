@@ -30,29 +30,29 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault(); // Menghentikan perilaku default dari tautan
     toggleLessonsSection();
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Data scraping yang diberikan
+    var dataScraping = [
+      // Data scraping disini
+    ];
+  
+    // Pilih elemen <ul> dengan id "scraping-list"
+    var scrapingList = document.getElementById("scraping-list");
+  
+    // Iterasi melalui setiap objek dalam data scraping
+    dataScraping.forEach(function(item) {
+      // Buat elemen <li>
+      var listItem = document.createElement("li");
+  
+      // Buat konten untuk elemen <li>
+      var content = document.createTextNode(item.kategori + " - " + item.judul + " (" + item.waktu + ")");
+  
+      // Tambahkan konten ke dalam elemen <li>
+      listItem.appendChild(content);
+  
+      // Tambahkan elemen <li> ke dalam elemen <ul>
+      scrapingList.appendChild(listItem);
+    });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Data scraping yang diberikan
-  var dataScraping = [
-    // Data scraping disini
-  ];
-
-  // Pilih elemen <ul> dengan id "scraping-list"
-  var scrapingList = document.getElementById("scraping-list");
-
-  // Iterasi melalui setiap objek dalam data scraping
-  dataScraping.forEach(function(item) {
-    // Buat elemen <li>
-    var listItem = document.createElement("li");
-
-    // Buat konten untuk elemen <li>
-    var content = document.createTextNode(item.kategori + " - " + item.judul + " (" + item.waktu + ")");
-
-    // Tambahkan konten ke dalam elemen <li>
-    listItem.appendChild(content);
-
-    // Tambahkan elemen <li> ke dalam elemen <ul>
-    scrapingList.appendChild(listItem);
-  });
 });
